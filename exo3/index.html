@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EXERCICE 3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+       <form id="main">
+            <div id="form-container">
+                <div class="input-container" style="align-items: flex-start; margin-right: 40px;">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" style="width: 252px;" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="phone" style="width: 250px;" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" style="width: 252px;" />
+                    </div>
+                    <div>
+                        <label for="time">Pickup Date/Time</label>
+                        <input type="datetime-local" name="time" style="width: 140;" />
+                    </div>    
+                    <div>
+                        <label for="pickup">Pickup Place</label>
+                        <select name="pickup" style="width: 212px;">
+                            <option>Nowhere</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dropoff">Dropoff Place</label>
+                        <input type="search" name="dropoff" style="width: 204px;" />
+                    </div>    
+                </div>
+                <div>
+                    <p>Which taxi do you require ?</p>
+                    <div class="input-container">
+                        <div>
+                            <input type="radio" name="vehicule" id="car" />
+                            <label for="car">Car</label>
+                        </div>    
+                        <div>
+                            
+                            <input type="radio" name="vehicule" id="van" />
+                            <label for="van">Van</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vehicule" id="tuktuk" />
+                            <label for="tuktuk">TukTuk</label>
+                        </div>    
+                    </div>
+                    <p>Extras</p>
+                    <div class="input-container">
+                        <div>
+                            <input type="checkbox" name="extras" id="baby-seat" />
+                            <label for="baby-seat">Baby Seat</label>
+                        </div>    
+                        <div>
+                            <input type="checkbox" name="extras" id="wheelchait-access" />
+                            <label for="wheelchait-access">Wheelchair Access</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="extras" id="stock-tip" />
+                            <label for="stock-tip">Stock Tip</label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div id="submit-container">
+                <input type="submit" value="Submit Booking" />
+            </div>
+       </form>
+    </body>
+</html>
